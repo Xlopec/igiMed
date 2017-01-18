@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Igi Med</string>
+    <string name="action_settings">Settings</string>
+    <!-- Main activity -->
+    <!-- position, birthday, from city -->
+    <string name="main_item_body" formatted="false">%s, birthday %d y., from %s</string>
+    <string name="main_load_err">Failed to load staff</string>
+    <!-- Employee creation activity -->
+    <string name="create_employee_title">Create new employee</string>
+    <string name="create_name_hint">Name</string>
+    <string name="create_surname_hint">Surname</string>
+    <string name="create_city_hint">City</string>
+    <string name="create_birthday">Select birthday date</string>
+    <string name="create_position">Select position</string>
+    <string name="create_progress_msg">Creation in progress…</string>
+    <string name="create_err">Failed to create employee</string>
+    <string name="create_birthday_set" formatted="false">%d year</string>
+    <!-- Employee editing activity -->
+    <string name="edit_employee_title">Edit</string>
+    <string name="edit_progress_msg">Saving changes…</string>
+    <string name="edit_err">Failed to save changes</string>
+</resources>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.CreateEmployeeActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="7dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="7dp"
+            android:paddingStart="0dp"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_save_white_24dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/app_bar_layout"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingEnd="@dimen/activity_side_pad"
+            android:paddingLeft="@dimen/activity_side_pad"
+            android:paddingRight="@dimen/activity_side_pad"
+            android:paddingStart="@dimen/activity_side_pad">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/empl_name_icon"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_account_circle_def_24dp" />
+
+                <maxoliynick.igimed.view.util.TypefacedEditText
+                    android:id="@+id/empl_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_toEndOf="@id/empl_name_icon"
+                    android:layout_toRightOf="@id/empl_name_icon"
+                    android:background="@android:color/transparent"
+                    android:ellipsize="end"
+                    android:hint="@string/create_name_hint"
+                    android:inputType="textAutoComplete"
+                    android:maxLines="1"
+                    app:customFont="Roboto-Light" />
+
+                <View
+                    style="@style/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/empl_name"
+                    android:layout_marginLeft="66dp"
+                    android:layout_marginStart="66dp"
+                    android:layout_marginTop="10dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/empl_surname_icon"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_account_circle_def_24dp" />
+
+                <maxoliynick.igimed.view.util.TypefacedEditText
+                    android:id="@+id/empl_surname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_toEndOf="@id/empl_surname_icon"
+                    android:layout_toRightOf="@id/empl_surname_icon"
+                    android:background="@android:color/transparent"
+                    android:ellipsize="end"
+                    android:hint="@string/create_surname_hint"
+                    android:inputType="textAutoComplete"
+                    android:maxLines="1"
+                    app:customFont="Roboto-Light" />
+
+                <View
+                    style="@style/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/empl_surname"
+                    android:layout_marginLeft="66dp"
+                    android:layout_marginStart="66dp"
+                    android:layout_marginTop="10dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/empl_city_icon"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_location_def_24dp" />
+
+                <maxoliynick.igimed.view.util.TypefacedEditText
+                    android:id="@+id/empl_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_toEndOf="@id/empl_city_icon"
+                    android:layout_toRightOf="@id/empl_city_icon"
+                    android:background="@android:color/transparent"
+                    android:ellipsize="end"
+                    android:hint="@string/create_city_hint"
+                    android:inputType="textAutoComplete"
+                    android:maxLines="1"
+                    app:customFont="Roboto-Light" />
+
+                <View
+                    style="@style/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/empl_city"
+                    android:layout_marginLeft="66dp"
+                    android:layout_marginStart="66dp"
+                    android:layout_marginTop="10dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/empl_birthday_root"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/empl_birthday_icon"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_cake_def_24dp" />
+
+                <maxoliynick.igimed.view.util.TypefacedTextView
+                    android:id="@+id/empl_birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_toEndOf="@id/empl_birthday_icon"
+                    android:layout_toRightOf="@id/empl_birthday_icon"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/create_birthday"
+                    android:textSize="18sp"
+                    app:customFont="Roboto-Light" />
+
+                <View
+                    style="@style/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/empl_birthday"
+                    android:layout_marginLeft="66dp"
+                    android:layout_marginStart="66dp"
+                    android:layout_marginTop="10dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/empl_position_root"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/empl_position_icon"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_position_def_24dp" />
+
+                <maxoliynick.igimed.view.util.TypefacedTextView
+                    android:id="@+id/empl_position"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_toEndOf="@id/empl_position_icon"
+                    android:layout_toRightOf="@id/empl_position_icon"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/create_position"
+                    android:textSize="18sp"
+                    app:customFont="Roboto-Light" />
+
+                <View
+                    style="@style/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/empl_position_icon"
+                    android:layout_marginLeft="66dp"
+                    android:layout_marginStart="66dp"
+                    android:layout_marginTop="10dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

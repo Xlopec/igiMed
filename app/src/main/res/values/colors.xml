@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="lightSecondary">#80FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="default_background">#2f4159</color>
+    <color name="primaryTextW">#90FFFFFF</color>
+    <color name="secondaryTextW">#54FFFFFF</color>
+    <color name="titleTextW">#96FFFFFF</color>
+    <color name="titleTextB">#96000000</color>
+    <color name="primaryTextB">#86000000</color>
+    <color name="secondaryTextB">#54000000</color>
+    <color name="primaryLight">#C5CAE9</color>
+    <color name="primary">#4255bd</color>
+    <color name="primaryDark">#354497</color>
+    <color name="accent">#536DFE</color>
+    <color name="def_ic_color">#76000000</color>
+
+</resources>
